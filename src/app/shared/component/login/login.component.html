@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <form (ngSubmit)="onSubmit()">
+      <div class="row">
+        <div class="col-12">
+          <input type="text" placeholder="Enter your username" name="username" [(ngModel)]="loginPayload.username"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="password" placeholder="Enter your password" name="password" [(ngModel)]="loginPayload.password"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="submit">Login</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-4"></div>
+</div>

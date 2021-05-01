@@ -1,0 +1,39 @@
+<h1>Add a user</h1>
+<div class="row">
+  <div class="col-4"></div>
+  <div class="col-4">
+    <form (ngSubmit)="onSubmit()" #addUser="ngForm">
+      <div class="row">
+        <div class="col-12">
+          <input type="text" placeholder="Enter your email" name="email" [(ngModel)]="user.email" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="text" placeholder="Choose your username" name="username" [(ngModel)]="user.username" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="password" placeholder="Enter your password" name="password"  [(ngModel)]="user.password" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="text" placeholder="Enter your First Name" name="lastName" [(ngModel)]="user.firstName" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <input type="text" placeholder="Enter Your Last Name" name="firstName" [(ngModel)]="user.lastName" required/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <button type="submit">Register</button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="col-4"></div>
+</div>
